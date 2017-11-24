@@ -41,7 +41,6 @@
       </ul>
     </nav>
     <h2>EDUCACIÓN</h2>
-    <hr>
     <section>
       <table border="1">
         <thead>
@@ -57,22 +56,45 @@
             <td>2009</td>
             <td>Profesional Computer</td>
             <td>Av. Proceceres de la independencia - SJL - Lima - Perú</td>
-            <td>Culminado</td>
+            <td>Si</td>
           </tr>
           <tr>
             <td>2010</td>
             <td>Instituto CICA</td>
             <td>Av. Wiesse - SJL - Lima - Perú</td>
-            <td>Culminado</td>
+            <td>Si</td>
           </tr>
           <tr>
             <td>2012 - 2015</td>
             <td>Instituto SISE</td>
             <td>Av.Arequipa - Santa Beatriz - Lima - Perú</td>
-            <td>Culminado</td>
+            <td>Si</td>
           </tr>
         </tbody>
       </table>
+      <hr>
+    </section>
+    <section>
+      <form autocomplete="on" name="formEstudios">
+        <fieldset>
+          <legend><h3>Agregar Estudios</h3></legend>
+          <label for="ano"><strong>Año:</strong></label>
+          <input type="number" name="ano" id="ano" max="2017" min="1950" required>
+          <br><br>
+          <label for="institucion"><strong>Institucion:</strong></label>
+          <input type="text" name="institucion" id="institutcion" value="" maxlength="50" placeholder="ejm: Instituto Nuevo" required>
+          <br><br>
+          <label for="lugar"><strong>Lugar:</strong></label>
+          <textarea name="lugar" id="lugar" rows="2" cols="30" placeholder="Lugar donde se encuentra la institucion" required></textarea>
+          <br><br>
+          <label for="culmino"><strong>¿Culmino?</strong></label>
+          <input type="radio" name="culmino">Si
+          <input type="radio" name="culmino">No
+          <br><br>
+          <input type="submit" value="Enviar">
+
+        </fieldset>
+      </form>
     </section>
     <br><br><br><br>
     <footer>
